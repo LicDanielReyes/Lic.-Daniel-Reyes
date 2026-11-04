@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///C:/Users/PAVILION/Downloads/index%20(2).html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RyR. Reyes - Rodríguez. Abogados | Justicia y Estrategia</title>
+    <!-- FontAwesome para Íconos Profesionales -->
+    <link rel="stylesheet" href="./RyR. Reyes - Rodríguez. Abogados _ Justicia y Estrategia_files/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./RyR. Reyes - Rodríguez. Abogados _ Justicia y Estrategia_files/css2" rel="stylesheet">
+    
+    <style>
+        /* VARIABLES DE DISEÑO (Colores Sobrios y Elegantes) */
+        :root {
+            --azul-marino: #0B1B3D;
+            --azul-oscuro: #061026;
+            --dorado: #C5A059;
+            --dorado-brillante: #E3C280;
+            --blanco: #FFFFFF;
+            --gris-claro: #F8F9FA;
+            --gris-texto: #4A4A4A;
+            --transicion: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        /* ESTILOS GLOBALES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--gris-texto);
+            background-color: var(--blanco);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .brand {
+            font-family: 'Cinzel', serif;
+            color: var(--azul-marino);
+        }
+
+        /* BARRA DE NAVEGACIÓN */
+        .navbar {
+            background-color: var(--blanco);
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .brand {
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand span {
+            color: var(--dorado);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--azul-marino);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transicion);
+        }
+
+        .nav-links a:hover {
+            color: var(--dorado);
+        }
+
+        /* SECCIÓN HERO (PRINCIPAL) */
+        .hero {
+            background: linear-gradient(135deg, rgba(11, 27, 61, 0.95) 0%, rgba(6, 16, 38, 0.98) 100%), 
+                        url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 4rem 10%;
+            color: var(--blanco);
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            color: var(--blanco);
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+            line-height: 1.3;
+        }
+
+        .hero h1 span {
+            color: var(--dorado);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+            letter-spacing: 1px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .btn-cta {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background-color: var(--dorado);
+            color: var(--azul-oscuro);
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 2px;
+            transition: var(--transicion);
+            border: 2px solid var(--dorado);
+        }
+
+        .btn-cta:hover {
+            background-color: transparent;
+            color: var(--blanco);
+            border-color: var(--blanco);
+            transform: translateY(-3px);
+        }
+
+        /* SECCIÓN TITULAR (PERFIL) */
+        .profile-section {
+            padding: 6rem 10%;
+            background-color: var(--blanco);
+        }
+
+        .profile-container {
+            display: grid;
+            grid-template-columns: 1fr 1.21fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        /* Efecto dinámico de imagen solicitado sin perder formalidad */
+        .profile-image-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .profile-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100%;
+            height: 100%;
+            border: 3px solid var(--dorado);
+            z-index: 1;
+            transition: var(--transicion);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            background-color: var(--gris-claro);
+        }
+
+        /* Animación interactiva sutil */
+        .profile-image-wrapper:hover::before {
+            transform: translate(-10px, -10px);
+            border-color: var(--azul-marino);
+        }
+
+        .profile-image-wrapper:hover .profile-img {
+            transform: translate(5px, 5px);
+        }
+
+        .profile-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .profile-text .subtitle {
+            color: var(--dorado);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .profile-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        /* SECCIÓN ESPECIALIDADES */
+        .specialties {
+            padding: 6rem 10%;
+            background-color: var(--gris-claro);
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--dorado);
+        }
+
+        .section-subtitle {
+            margin-bottom: 4rem;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+        }
+
+        .grid-specialties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Tarjetas con Efecto de Despliegue Dinámico de Fondo */
+        .card {
+            background-color: var(--blanco);
+            padding: 3rem 2rem;
+            border-radius: 4px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: var(--transicion);
+            border-bottom: 3px solid transparent;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: var(--azul-marino);
+            z-index: -1;
+            transition: var(--transicion);
+        }
+
+        .card i {
+            font-size: 2.5rem;
+            color: var(--dorado);
+            margin-bottom: 1.5rem;
+            transition: var(--transicion);
+        }
+
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            transition: var(--transicion);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            transition: var(--transicion);
+        }
+
+        /* Hover dinámico formal */
+        .card:hover {
+            transform: translateY(-5px);
+            border-bottom-color: var(--dorado);
+            box-shadow: 0 15px 35px rgba(11, 27, 61, 0.15);
+        }
+
+        .card:hover::before {
+            height: 100%;
+        }
+
+        .card:hover i {
+            color: var(--dorado-brillante);
+            transform: scale(1.1);
+        }
+
+        .card:hover h3, .card:hover p {
+            color: var(--blanco);
+        }
+
+        /* SECCIÓN CONTACTO Y UBICACIÓN */
+        .contact-section {
+            padding: 6rem 10%;
+            background-color: var(--blanco);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+        }
+
+        .info-panel {
+            background-color: var(--azul-marino);
+            color: var(--blanco);
+            padding: 3rem;
+            border-radius: 4px;
+        }
+
+        .info-panel h3 {
+            color: var(--blanco);
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 10px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item i {
+            font-size: 1.3rem;
+            color: var(--dorado);
+            margin-top: 5px;
+        }
+
+        .info-item p {
+            font-size: 1rem;
+        }
+
+        .info-item strong {
+            display: block;
+            color: var(--dorado);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 3px;
+        }
+
+        /* Botones de acción directa en contacto */
+        .action-buttons {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0.9rem;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 4px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            transition: var(--transicion);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: var(--blanco);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebd54;
+            transform: translateY(-2px);
+        }
+
+        .btn-email {
+            background-color: transparent;
+            color: var(--blanco);
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .btn-email:hover {
+            background-color: var(--blanco);
+            color: var(--azul-marino);
+            border-color: var(--blanco);
+            transform: translateY(-2px);
+        }
+
+        /* MAPA DE GOOGLE MAPS INTEGRADO */
+        .map-panel {
+            width: 100%;
+            height: 100%;
+            min-height: 400px;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+            border: 1px solid #EAEAEA;
+        }
+
+        .map-panel iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            background-color: var(--azul-oscuro);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 3rem 10% 2rem 10%;
+            text-align: center;
+            border-top: 2px solid var(--dorado);
+            font-size: 0.9rem;
+        }
+
+        .footer-logo {
+            font-family: 'Cinzel', serif;
+            color: var(--blanco);
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-logo span {
+            color: var(--dorado);
+        }
+
+        .footer-links {
+            margin: 1.5rem 0;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            transition: var(--transicion);
+            cursor: pointer;
+        }
+
+        .footer-links a:hover {
+            color: var(--dorado);
+        }
+
+        /* VENTANA FLOTANTE MODAL (AVISO DE PRIVACIDAD RIGUROSO) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(6, 16, 38, 0.85);
+            backdrop-filter: blur(5px);
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background-color: var(--blanco);
+            padding: 3rem;
+            border-radius: 4px;
+            max-width: 750px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            border-top: 4px solid var(--dorado);
+        }
+
+        .modal-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-right: 2rem;
+        }
+
+        .modal-content p, .modal-content ul {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .modal-content ul {
+            padding-left: 1.5rem;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-size: 1.5rem;
+            color: var(--azul-marino);
+            cursor: pointer;
+            transition: var(--transicion);
+        }
+
+        .close-modal:hover {
+            color: var(--dorado);
+        }
+
+        /* DISEÑO RESPONSIVO (TELÉFONOS Y TABLETAS) */
+        @media (max-width: 992px) {
+            .profile-container, .contact-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .navbar {
+                padding: 1rem 5%;
+            }
+            .nav-links {
+                display: none; /* Simplificado para mantener código limpio sin scripts pesados */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar">
+        <a href="file:///C:/Users/PAVILION/Downloads/index%20(2).html#" class="brand">RyR. Reyes - Rodríguez<span>. Abogados</span></a>
+        <ul class="nav-links">
+            <li><a href="file:///C:/Users/PAVILION/Downloads/index%20(2).html#inicio">Inicio</a></li>
+            <li><a href="file:///C:/Users/PAVILION/Downloads/index%20(2).html#titular">El Despacho</a></li>
+            <li><a href="file:///C:/Users/PAVILION/Downloads/index%20(2).html#especialidades">Especialidades</a></li>
+            <li><a href="file:///C:/Users/PAVILION/Downloads/index%20(2).html#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECCIÓN HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Seguridad Jurídica Integral</h1>
+            <p>"Aliados de tu tranquilidad, defensores de tus derechos, tenemos la seguridad jurídica que tu vida, familia y negocio necesita."</p>
+            <a href="file:///C:/Users/PAVILION/Downloads/index%20(2).html#contacto" class="btn-cta">Agendar Consulta Jurídica</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN TITULAR (PERFIL) -->
+    <section class="profile-section" id="titular">
+        <div class="profile-container">
+            <div class="profile-image-wrapper">
+                <!-- Se enlaza el archivo local exacto solicitado -->
+                <img src="file:///C:/Users/PAVILION/Downloads/image_R-FFRS.png" alt="M. en D. Daniel Reyes Cázarez" class="profile-img">
+            </div>
+            <div class="profile-text">
+                <h2>M. en D. Daniel Reyes Cázarez</h2>
+                <div class="subtitle">Titular del Despacho Jurídico</div>
+                <p>En <strong>RyR. Reyes - Rodríguez. Abogados</strong>, entendemos que cada conflicto legal requiere una estrategia milimétrica, una ética intachable y un profundo sentido de responsabilidad social. Nos consolidamos como firmas aliadas dedicadas a proteger el patrimonio corporativo, la integridad familiar y el pleno goce de los derechos de nuestros representados.</p>
+                <p>Nuestra práctica combina dinamismo operativo con el máximo rigor institucional, garantizando un acompañamiento cercano, transparente y orientado a resultados definitivos en todas las ramas del derecho procesal y consultivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ESPECIALIDADES -->
+    <section class="specialties" id="especialidades">
+        <h2 class="section-title">Áreas de Especialidad</h2>
+        <p class="section-subtitle">Soluciones legales de alta especialización técnica y estratégica.</p>
+        
+        <div class="grid-specialties">
+            <!-- Derecho Corporativo -->
+            <div class="card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Derecho Corporativo</h3>
+                <p>Constitución de sociedades, auditorías legales, contratos mercantiles, protección de marcas y blindaje jurídico de empresas.</p>
+            </div>
+            <!-- Civil -->
+            <div class="card">
+                <i class="fa-solid fa-gavel"></i>
+                <h3>Derecho Civil</h3>
+                <p>Contratos, obligaciones, regularización de inmuebles, juicios reivindicatorios, usucapión y litigios sobre propiedad de bienes.</p>
+            </div>
+            <!-- Familiar -->
+            <div class="card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Derecho Familiar</h3>
+                <p>Juicios de divorcio, pensiones alimenticias, custodias, juicios sucesorios testamentarios e intestamentarios y adopciones.</p>
+            </div>
+            <!-- Laboral -->
+            <div class="card">
+                <i class="fa-solid fa-user-tie"></i>
+                <h3>Derecho Laboral</h3>
+                <p>Asesoría patronal y de trabajadores, rescisiones de contrato, liquidaciones, indemnizaciones y litigio ante Tribunales Laborales.</p>
+            </div>
+            <!-- Penal -->
+            <div class="card">
+                <i class="fa-solid fa-building-shield"></i>
+                <h3>Derecho Penal</h3>
+                <p>Representación estratégica en el Sistema Penal Acusatorio, defensoría técnica especializada y atención de denuncias o querellas.</p>
+            </div>
+            <!-- Amparo -->
+            <div class="card">
+                <i class="fa-solid fa-scale-balanced"></i>
+                <h3>Juicio de Amparo</h3>
+                <p>Defensa constitucional contra actos u omisiones de autoridades que vulneren tus derechos fundamentales y garantías individuales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO Y UBICACIÓN -->
+    <section class="contact-section" id="contacto">
+        <div class="contact-container">
+            <!-- Panel informativo -->
+            <div class="info-panel">
+                <h3>Contacto Oficial</h3>
+                
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Dirección Legal</strong>
+                        <p>Calle Río Amatlán 510,<br>Colonia Ventura Puente,<br>Morelia, Michoacán.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <strong>Horario de Atención</strong>
+                        <p>Lunes a Viernes de 8:00 a 15:00 horas.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Correo Electrónico</strong>
+                        <p>despacho.danielrc@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <!-- Botón directo de WhatsApp con mensaje personalizado estructurado -->
+                    <a href="https://wa.me/524431282281?text=Hola,%20solicito%20una%20consulta%20legal%20con%20el%20M.%20en%20D.%20Daniel%20Reyes" target="_blank" class="btn-action btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar por WhatsApp
+                    </a>
+                    <a href="mailto:despacho.danielrc@gmail.com?subject=Solicitud%20de%20Asesor%C3%ADa%20Jur%C3%ADdica" class="btn-action btn-email">
+                        <i class="fa-solid fa-envelope"></i> Enviar Correo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mapa dinámico de Google Maps integrado centrado en la dirección -->
+            <div class="map-panel">
+                <iframe src="./RyR. Reyes - Rodríguez. Abogados _ Justicia y Estrategia_files/embed.html" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-logo">RyR. Reyes - Rodríguez<span>. Abogados</span></div>
+        <p>© 2026 Todos los derechos reservados. Titular M. en D. Daniel Reyes Cázarez.</p>
+        <div class="footer-links">
+            <a onclick="toggleModal(true)">Aviso de Privacidad Legal</a>
+        </div>
+    </footer>
+
+    <!-- INTERFAZ MODAL (AVISO DE PRIVACIDAD LFPDPPP) -->
+    <div class="modal" id="privacyModal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="toggleModal(false)">×</span>
+            <h3>AVISO DE PRIVACIDAD INTEGRAL</h3>
+            <p><strong>Responsable del Tratamiento de sus Datos Personales:</strong><br>
+            La firma legal <strong>RyR. Reyes - Rodríguez. Abogados</strong>, bajo la dirección del Titular M. en D. Daniel Reyes Cázarez, con domicilio en Calle Río Amatlán 510, Colonia Ventura Puente, Morelia, Michoacán, es responsable del uso, resguardo y protección de sus datos personales, fundamentado formalmente en lo estipulado por la <em>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</em> vigente en los Estados Unidos Mexicanos.</p>
+            
+            <p><strong>Finalidades del Tratamiento:</strong><br>
+            Los datos personales que recabamos de usted (tales como nombre, teléfono, correo electrónico, situación jurídica y patrimonial) serán utilizados exclusivamente para las siguientes finalidades esenciales:</p>
+            <ul>
+                <li>Proveer la asesoría jurídica, defensa procesal o consultoría legal solicitada.</li>
+                <li>Estructurar estrategias técnicas de litigio ante tribunales locales o federales.</li>
+                <li>Gestión, control y agendamiento de citas presenciales o virtuales.</li>
+                <li>Cumplimiento de las obligaciones contractuales y mandatos judiciales correspondientes.</li>
+            </ul>
+
+            <p><strong>Derechos ARCO y Revocación:</strong><br>
+            Usted tiene pleno derecho al Acceso, Rectificación, Cancelación u Oposición (Derechos ARCO) del tratamiento de sus datos. Para ejercer estos derechos o revocar el consentimiento previamente otorgado, deberá enviar una solicitud formal por escrito al correo institucional: <strong>despacho.danielrc@gmail.com</strong>, detallando el derecho que desea ejercer y adjuntando una identificación oficial para validar su titularidad conforme a los lineamientos legales.</p>
+            
+            <p><strong>Modificaciones al Aviso:</strong><br>
+            El presente aviso puede sufrir modificaciones, cambios o actualizaciones derivadas de nuevos requerimientos legales o de nuestras propias necesidades operativas. Cualquier cambio será publicado visiblemente a través de este portal de Internet.</p>
+            <p style="text-align: center; font-size: 0.85rem; color: #888; margin-top: 2rem;">Última actualización jurídica: Noviembre 2026.</p>
+        </div>
+    </div>
+
+    <!-- SCRIPT DE INTERACCIÓN DINÁMICA -->
+    <script>
+        function toggleModal(show) {
+            const modal = document.getElementById('privacyModal');
+            if (show) {
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Bloquea scroll de fondo
+            } else {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto'; // Restaura scroll
+            }
+        }
+
+        // Cerrar modal si se hace clic fuera del contenido
+        window.onclick = function(event) {
+            const modal = document.getElementById('privacyModal');
+            if (event.target == modal) {
+                toggleModal(false);
+            }
+        }
+    </script>
+
+
+</body></html>
